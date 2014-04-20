@@ -1,4 +1,13 @@
-# Example table for a typical Book model.
+Student:
+  - first_name: string
+  - last_name: string
+  - favorite_color: string
+  - bio: text
+
+Book:
+  - title: string
+  - author: string
+
 #
 # Book:
 #   - title: string
