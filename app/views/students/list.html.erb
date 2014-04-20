@@ -1,1 +1,16 @@
 <h1> Roll Call </h1>
+
+<ul>
+  <% all_students = Student.read %>
+
+  <% all_students.each do |person| %>
+    <li>
+      <%= person["first_name"] %>
+      <%= person["last_name"] %>
+    </li>
+  <% end %>
+</ul>
+
+<p>
+That's our list.
+</p>

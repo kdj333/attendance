@@ -11,11 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140420002808) do
+ActiveRecord::Schema.define(version: 20140420005624) do
 
   create_table "books", force: true do |t|
-    t.string "title"
-    t.string "author"
+    t.string  "title"
+    t.string  "author"
+    t.text    "summary"
+    t.boolean "hardcover"
   end
 
   create_table "students", force: true do |t|
